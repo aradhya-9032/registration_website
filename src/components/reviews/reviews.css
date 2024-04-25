@@ -1,0 +1,241 @@
+/* .review-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .heading h3 {
+    font-size: 1.2em;
+  }
+  
+  .review-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .review-box {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(199, 197, 197);
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .review-box.active {
+    border: 1px solid red;
+    color: white;
+  }
+  
+  .arrow {
+    font-size: 3em;
+    margin: 0 10px;
+    cursor: pointer;
+    color: red;
+  }
+  
+  .arrow.disabled {
+    color: lightgray;
+    cursor: not-allowed;
+  } */
+
+  .container {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 30px 20px;
+}
+.reviews {
+  display: inline-flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 30px;
+  transition: all 0.5s ease-in-out 0s;
+}
+.review.active {
+  border: 2px solid rgb(245, 56, 56);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 5px;
+}
+/* .review {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid rgb(221, 221, 221);
+  padding: 20px;
+  width: 360px;
+  height: 290px;
+  transition: all 0.5s ease-in-out 0s;
+  gap: 20px;
+  cursor: pointer;
+} */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: rgb(11, 19, 42);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 20px;
+  width: 340px;
+  height: 300px;
+  transition: all 0.5s ease-in-out 0s;
+  gap: 20px;
+}
+.review:hover{
+  border: 2px solid red;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 5px;
+}
+.subtitle {
+  color: rgb(79, 86, 101);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(11, 19, 42);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  gap: 10px;
+}
+.score img {
+  width: 20px;
+  height: 20px;
+}
+.content {
+  color: rgb(11, 19, 42);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 40px;
+}
+.selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s ease-in-out 0s;
+}
+.select {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(221, 221, 221);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.select.active {
+  width: 30px;
+  height: 10px;
+  background-color: rgb(245, 56, 56);
+}
+.primary {
+  background-color: rgb(245, 56, 56);
+  border: none;
+  gap: 10px;
+  margin: 2px;
+  border-radius: 10px;
+}
+.icon-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  /* border: 2px solid rgb(245, 56, 56); */
+  /* background-color: white; */
+  cursor: pointer;
+  padding: 5px;
+}
+  
+.subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px 5px;
+  /* position: relative; */
+  background: rgb(255, 255, 255);
+  z-index: 1;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.title-small {
+  color: rgb(11, 19, 42);
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 50px;
+}
+  
+.subtitle {
+  color: rgb(79, 86, 101);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.button {
+  border: 2px solid red;
+  padding: 13px 25px;
+  position:relative;
+  right: 6rem;
+  background-color: red;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color:white;
+  cursor: pointer;
+  border: none;
+}
+.button:hover{
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(251, 51, 51);
+}
+
+
+
+
+
+
+
+
+
+
+

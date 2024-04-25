@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 7rem;
+}
+.header-container ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/* nav{
+  position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    border: 3px solid blue;
+} */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* border: 2px solid red; */
+    position: relative;
+    /* left: rem; */
+  }
+  ul li {
+    display: inline-block;
+    margin-right: 20px; 
+    position: relative;
+    padding: 15px 10px;
+    cursor: pointer;
+  }
+  ul li a {
+    text-decoration: none; 
+    color: #4F5665;
+ 
+  }
+  ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 5px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease; 
+  }
+  ul li:hover::after {
+    cursor: pointer;
+    background-color: red;
+  }
+  .sing-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 5px;
+  }
+/* .sign-in{
+    padding: 5px;
+    position: absolute;
+    right: -35rem;
+    border: none;
+    background-color: white;
+    font-weight:bolder;
+    font-size: 18px;
+}
+.sign-up{
+  position:absolute;
+  padding: 8px 27px;
+  right: -45rem;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  color:red;
+} */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+  box-shadow: rgb(0 0 0 / 50%) 0px 10px 15px 5px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+ .left img {
+  width: 100px; 
+}
+
+.right button {
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.sign-in {
+  font-weight: bold;
+  padding:4px;
+  position: relative;
+  right: 8rem;
+  border: none;
+  background-color: white;
+  font-weight:bolder;
+  font-size: 17px;
+  cursor: pointer;
+}
+.sign-in:hover{
+  border: 1px solid red;
+  color: red;
+  padding: 7px 25px;
+  border-radius: 30px;
+}
+
+.sign-up {
+  border: 2px solid red;
+  padding: 8px 16px;
+  position:relative;
+  padding: 8px 27px;
+  right: 6rem;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  color:red;
+}
+.sign-up:hover{
+  color: white;
+  background-color: red;
+  cursor: pointer;
+}
+
+
+.middle ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.middle ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.middle ul li.active a {
+  font-weight: bold;
+  color: red; /* Change color as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

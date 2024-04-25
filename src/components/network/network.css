@@ -1,0 +1,9 @@
+.global-container{
+    font-size: 21px;
+    margin-top: -80px;
+}
+ p{
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 3rem;
+}
